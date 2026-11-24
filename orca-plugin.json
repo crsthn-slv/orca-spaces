@@ -1,6 +1,6 @@
 {
   "manifestVersion": 2,
-  "id": "orca-spaces",
+  "id": "zen-spaces",
   "name": "Spaces",
   "version": "0.1.0",
   "description": "Zen-style spaces for Orca: group projects and switch the sidebar between them.",
