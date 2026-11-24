@@ -1,0 +1,186 @@
+{
+  "manifestVersion": 2,
+  "id": "orca-spaces",
+  "name": "Spaces",
+  "version": "0.1.0",
+  "description": "Zen-style spaces for Orca: group projects and switch the sidebar between them.",
+  "engines": {
+    "orca": ">=1.4.259"
+  },
+  "execution": "trusted-worker",
+  "pluginApi": 1,
+  "main": "src/worker.ts",
+  "contributes": {
+    "panels": [
+      {
+        "id": "spaces",
+        "title": "Spaces",
+        "icon": "layers",
+        "entry": "src/panel.tsx",
+        "ui": "components"
+      }
+    ],
+    "commands": [
+      {
+        "id": "spaces.next",
+        "title": "Spaces: Next space"
+      },
+      {
+        "id": "spaces.prev",
+        "title": "Spaces: Previous space"
+      },
+      {
+        "id": "spaces.all",
+        "title": "Spaces: Show all projects"
+      },
+      {
+        "id": "spaces.go1",
+        "title": "Spaces: Go to space 1"
+      },
+      {
+        "id": "spaces.go2",
+        "title": "Spaces: Go to space 2"
+      },
+      {
+        "id": "spaces.go3",
+        "title": "Spaces: Go to space 3"
+      },
+      {
+        "id": "spaces.go4",
+        "title": "Spaces: Go to space 4"
+      },
+      {
+        "id": "spaces.go5",
+        "title": "Spaces: Go to space 5"
+      },
+      {
+        "id": "spaces.go6",
+        "title": "Spaces: Go to space 6"
+      },
+      {
+        "id": "spaces.go7",
+        "title": "Spaces: Go to space 7"
+      },
+      {
+        "id": "spaces.go8",
+        "title": "Spaces: Go to space 8"
+      },
+      {
+        "id": "spaces.go9",
+        "title": "Spaces: Go to space 9"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "spaces.next",
+        "key": "Mod+Alt+]"
+      },
+      {
+        "command": "spaces.prev",
+        "key": "Mod+Alt+["
+      },
+      {
+        "command": "spaces.all",
+        "key": "Mod+Alt+0"
+      },
+      {
+        "command": "spaces.go1",
+        "key": "Mod+Alt+1"
+      },
+      {
+        "command": "spaces.go2",
+        "key": "Mod+Alt+2"
+      },
+      {
+        "command": "spaces.go3",
+        "key": "Mod+Alt+3"
+      },
+      {
+        "command": "spaces.go4",
+        "key": "Mod+Alt+4"
+      },
+      {
+        "command": "spaces.go5",
+        "key": "Mod+Alt+5"
+      },
+      {
+        "command": "spaces.go6",
+        "key": "Mod+Alt+6"
+      },
+      {
+        "command": "spaces.go7",
+        "key": "Mod+Alt+7"
+      },
+      {
+        "command": "spaces.go8",
+        "key": "Mod+Alt+8"
+      },
+      {
+        "command": "spaces.go9",
+        "key": "Mod+Alt+9"
+      }
+    ],
+    "statusBarItems": [
+      {
+        "id": "slot0",
+        "text": "All",
+        "tooltip": "All projects",
+        "command": "spaces.all"
+      },
+      {
+        "id": "slot1",
+        "text": "1",
+        "tooltip": "Space 1",
+        "command": "spaces.go1"
+      },
+      {
+        "id": "slot2",
+        "text": "2",
+        "tooltip": "Space 2",
+        "command": "spaces.go2"
+      },
+      {
+        "id": "slot3",
+        "text": "3",
+        "tooltip": "Space 3",
+        "command": "spaces.go3"
+      },
+      {
+        "id": "slot4",
+        "text": "4",
+        "tooltip": "Space 4",
+        "command": "spaces.go4"
+      },
+      {
+        "id": "slot5",
+        "text": "5",
+        "tooltip": "Space 5",
+        "command": "spaces.go5"
+      },
+      {
+        "id": "slot6",
+        "text": "6",
+        "tooltip": "Space 6",
+        "command": "spaces.go6"
+      },
+      {
+        "id": "slot7",
+        "text": "7",
+        "tooltip": "Space 7",
+        "command": "spaces.go7"
+      }
+    ]
+  },
+  "capabilities": [
+    {
+      "kind": "storage:own"
+    },
+    {
+      "kind": "workspace:read"
+    },
+    {
+      "kind": "workspace:write"
+    }
+  ],
+  "license": "MIT"
+}
