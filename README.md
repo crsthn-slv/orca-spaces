@@ -17,7 +17,7 @@ sidebar between groups with one click or a shortcut.
 ## Install
 
 ```sh
-orca plugin install <owner>/zen-spaces
+orca plugin install <owner>/spaces
 ```
 
 Orca shows the access it asks for and prints the `--approve <fingerprint>` command to confirm.
